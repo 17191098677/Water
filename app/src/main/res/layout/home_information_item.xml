@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y161"
+        android:orientation="horizontal"
+        android:background="#fff">
+        <ImageView
+            android:id="@+id/home_img_information"
+            android:layout_width="@dimen/x105"
+            android:layout_height="@dimen/y105"
+            android:layout_marginLeft="@dimen/x45"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/information_one"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/x43"
+            android:layout_gravity="center_vertical">
+            <TextView
+                android:id="@+id/information_activity_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="华航公告"
+                android:textSize="@dimen/x44"
+                android:textColor="#656565"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

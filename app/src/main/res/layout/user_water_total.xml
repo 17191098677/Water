@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#fff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="历史累计用水量"
+            android:textColor="#000"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x240"/>
+        <TextView
+            android:id="@+id/userWater_tv_TotalBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--"
+            android:layout_marginLeft="@dimen/x30"
+            android:textColor="#000"
+            android:layout_gravity="center_vertical"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="m³"
+            android:textColor="#000"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x30"/>
+
+</LinearLayout>

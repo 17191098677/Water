@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants">
+    <CheckBox
+        android:id="@+id/checkbox_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/y141"
+        android:text="北京市昌平区十三陵镇王庄村3号"
+        android:gravity="center_vertical"
+        android:clickable="false"/>
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/y141"
+        android:text="0639658924"
+        android:textColor="#000"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:layout_marginRight="@dimen/x50"/>
+</RelativeLayout>

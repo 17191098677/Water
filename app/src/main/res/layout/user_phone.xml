@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y253"
+    android:orientation="vertical"
+    android:background="#fff">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="昵称"
+        android:textSize="15sp"
+        android:layout_marginTop="@dimen/y40"
+        android:layout_marginLeft="@dimen/x57"/>
+    <TextView
+        android:id="@+id/userInfomation_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_marginTop="@dimen/y40"
+        android:layout_marginLeft="@dimen/x300" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:layout_marginLeft="@dimen/x57"
+        android:layout_marginTop="@dimen/y126"
+        android:background="#b9b9b9"
+        />
+    <RelativeLayout
+        android:id="@+id/userInfomation_bt_updatePhone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y126"
+        android:layout_marginTop="@dimen/y150"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y60"
+            android:layout_gravity="center_vertical"
+            android:text="手机号码"
+            android:textSize="15sp"
+            android:layout_marginLeft="@dimen/x58"/>
+        <TextView
+            android:id="@+id/userInformation_tv_Phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x300"
+            android:textSize="15sp" />
+        <ImageView
+            android:layout_width="@dimen/x58"
+            android:layout_height="@dimen/y57"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/into"
+            android:layout_marginRight="@dimen/x50"/>
+    </RelativeLayout>
+</RelativeLayout>

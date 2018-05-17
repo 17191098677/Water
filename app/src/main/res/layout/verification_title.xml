@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="@dimen/x596"
+    android:layout_height="@dimen/y233"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="@dimen/y222">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="短信验证码已经发送至"
+        android:textSize="@dimen/x50"
+        android:layout_gravity="center_horizontal"/>
+    <TextView
+        android:id="@+id/tv_verification_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="13691267867"
+        android:textSize="@dimen/x50"
+        android:layout_gravity="center_horizontal"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/x50"
+        android:text="请填写验证码"
+        android:layout_gravity="center_horizontal"/>
+</LinearLayout>

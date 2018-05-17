@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/wisdomItem">
+    <TextView
+        android:id="@+id/wisdom_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="qqqqqq"
+        android:textSize="@dimen/x52"
+        android:textColor="#282828"
+        android:layout_marginTop="@dimen/y32"/>
+    <ImageView
+        android:id="@+id/wisdom_img"
+        android:layout_width="@dimen/x994"
+        android:layout_height="@dimen/y377"
+        android:layout_marginTop="@dimen/y28"
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:id="@+id/wisdom_tv_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2018年4月17日"
+        android:textSize="@dimen/x34"
+        android:textColor="#989898"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/y15"
+        android:layout_marginBottom="@dimen/y16"/>
+</LinearLayout>

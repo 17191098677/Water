@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:Android="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.smartcityin.waterknow">
+
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- SDK2.1新增获取用户位置信息 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <meta-data
+        android:name="design_width"
+        android:value="1080" />
+    <meta-data
+        android:name="design_height"
+        android:value="1920" />
+    <application
+        android:name=".Global.WaterKnowApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/applogo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/applogo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".View.Activity.GuideActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".View.Activity.SplashActivity"
+            android:theme="@style/splash_style">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="1106804472" />
+                <data
+                    android:host="AccountManageActivity"
+                    android:scheme="aone"
+                    tools:ignore="AppLinkUrlError" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".View.Activity.HomeActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".View.Activity.UserInformationActivity" />
+        <activity android:name=".View.Activity.LoginActivity" />
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="1106804472" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="1106804472" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".View.Activity.RegisterActivity" />
+        <activity
+            android:name=".View.Activity.VerificationActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".View.Activity.RegisterBindingWaterMeterActivity" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.smartcityin.waterknow.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/fileprovider" />
+        </provider>
+
+
+        <activity android:name=".View.Activity.UpdatePhoneActivity" />
+        <activity android:name=".View.Activity.HomeSearchActivity" />
+        <activity android:name=".View.Activity.HomeRegionActivity" />
+        <activity android:name=".View.Activity.HomeInformationActivity" />
+        <activity android:name=".View.Activity.ServiceNetWorkActivity" />
+        <activity android:name=".View.Activity.ServiceNewsCenterActivity" />
+        <activity android:name=".View.Activity.ServiceWaterHelpActivity" />
+        <activity android:name=".View.Activity.ServiceMaintenanceActivity" />
+        <activity android:name=".View.Activity.HomePaymentActivity" />
+        <activity android:name=".View.Activity.HomeWisdomLifeActivity" />
+        <activity android:name=".View.Activity.HomeWaterKnowLedgeActivity" />
+        <activity android:name=".View.Activity.HomeWaterRepotActivity"/>
+        <activity android:name=".View.Activity.MyOrderActivity" />
+        <activity android:name=".View.Activity.MyInvoiceToolActivity" />
+        <activity
+            android:name=".View.Activity.MyInToolPaymentActivity" />
+        <activity android:name=".View.Activity.MyCommonProblemActivity" />
+        <activity android:name=".View.Activity.MyFeedBackActivity"/>
+        <activity android:name=".View.Activity.MySetActivity" />
+        <activity android:name=".View.Activity.MySwitchNumberActivity" />
+        <activity android:name=".View.Activity.MyAnnualQueryActivity" />
+        <activity android:name=".View.Activity.UpdatePhonePswActivity" />
+        <activity android:name=".View.Activity.UserPSWActivity" />
+        <activity android:name=".View.Activity.UpdeterPhoneNewPhoneActivity" />
+        <activity android:name=".View.Activity.MySetUserInformationActivity" />
+        <activity android:name=".View.Activity.MyCompanyProfileActivity" />
+        <activity android:name=".View.Activity.WebDetailsActivity"
+            android:launchMode="singleInstance"/>
+        <activity android:name=".View.Activity.CommitSuccessActivity"></activity>
+    </application>
+
+</manifest>

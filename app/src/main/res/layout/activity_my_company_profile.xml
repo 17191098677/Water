@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    tools:context=".View.Activity.MyCompanyProfileActivity">
+   <include layout="@layout/tool_bar"/>
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+           <TextView
+               android:id="@+id/myCompany_tv_title"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="服务协议"
+               android:textSize="@dimen/x54"
+               android:textColor="#282828"
+               android:layout_gravity="center_horizontal"
+               android:layout_marginTop="@dimen/y58"/>
+           <TextView
+               android:id="@+id/tvContent"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textSize="@dimen/x44"
+               android:layout_gravity="center_horizontal"
+               android:layout_marginTop="@dimen/y72"
+               android:textColor="#282828"
+               android:text="服务协议服务协议服务协议服务协议服务协议服务协议服务协议服务协议服务协议服务协议服务协议服务协议服务协议服务协议服务协议服务协议服务协议服务协议服务协议服务协议"/>
+       </LinearLayout>
+   </ScrollView>
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff">
+    <LinearLayout
+        android:id="@+id/commonProblem_bt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y126"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="@dimen/x69"
+            android:layout_height="@dimen/y69"
+            android:src="@drawable/issue"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x58"/>
+        <TextView
+            android:layout_width="@dimen/x180"
+            android:layout_height="@dimen/y60"
+            android:layout_gravity="center_vertical"
+            android:text="常见问题"
+            android:textSize="15sp"
+            android:layout_marginLeft="@dimen/x30"/>
+        <ImageView
+            android:layout_width="@dimen/x58"
+            android:layout_height="@dimen/y57"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x650"
+            android:src="@drawable/into"/>
+    </LinearLayout>
+    <View
+        android:layout_width="@dimen/x1023"
+        android:layout_height="@dimen/y3"
+        android:layout_marginLeft="@dimen/x57"
+        android:background="#eaeaea"/>
+    <LinearLayout
+        android:id="@+id/feedback_bt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y126"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="@dimen/x69"
+            android:layout_height="@dimen/y69"
+            android:src="@drawable/opinion"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x58"/>
+        <TextView
+            android:layout_width="@dimen/x180"
+            android:layout_height="@dimen/y60"
+            android:layout_gravity="center_vertical"
+            android:text="意见反馈"
+            android:textSize="15sp"
+            android:layout_marginLeft="@dimen/x30"/>
+        <ImageView
+            android:layout_width="@dimen/x58"
+            android:layout_height="@dimen/y57"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x650"
+            android:src="@drawable/into"/>
+    </LinearLayout>
+
+
+</LinearLayout>
+

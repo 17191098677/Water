@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#00000000"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    tools:context=".View.Activity.MyAnnualQueryActivity">
+    <include layout="@layout/tool_bar"/>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/myAnnualQuery_tab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y121"
+        android:layout_marginTop="@dimen/y6"
+        android:background="#fff"
+        app:tabMode="fixed"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="#5aa3e2"></android.support.design.widget.TabLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/myAnnualQuery_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+</LinearLayout>

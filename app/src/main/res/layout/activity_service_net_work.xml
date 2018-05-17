@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#00000000"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    tools:context=".View.Activity.ServiceNetWorkActivity">
+    <include layout="@layout/tool_bar"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/y6"
+        android:background="#fff">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/serviceNetWork_Relv"
+            android:layout_width="@dimen/x1050"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:scrollbars="none"></android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+</LinearLayout>

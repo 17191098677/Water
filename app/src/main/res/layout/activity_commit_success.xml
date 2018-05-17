@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    tools:context=".View.Activity.CommitSuccessActivity">
+    <include layout="@layout/tool_bar"/>
+    <ImageView
+        android:layout_width="@dimen/x337"
+        android:layout_height="@dimen/y337"
+        android:layout_marginTop="@dimen/y350"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/success"/>
+    <TextView
+        android:id="@+id/tv_commit_success"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/y797"
+        android:text="提交成功"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/x70"
+        android:textColor="#656565"/>
+    <Button
+        android:id="@+id/bt_success"
+        android:layout_width="@dimen/x907"
+        android:layout_height="@dimen/y115"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/login_bt_back"
+        android:text="完成"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/y290"/>
+</RelativeLayout>

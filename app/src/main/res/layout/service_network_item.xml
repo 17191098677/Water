@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/x1050"
+    android:layout_height="@dimen/y271"
+    android:orientation="horizontal"
+    android:id="@+id/service_net_work_item">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/x40"
+        android:layout_centerVertical="true">
+        <TextView
+            android:id="@+id/serviceNetWork_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="天安门广场"
+            android:textSize="@dimen/x40"
+            android:textColor="#282828"/>
+        <TextView
+            android:id="@+id/serviceNetWork_tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/x34"
+            android:textColor="#656565"/>
+        <TextView
+            android:id="@+id/serviceNetWork_tv_numberPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/serviceNetWork_img"
+        android:layout_width="@dimen/x188"
+        android:layout_height="@dimen/y185"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>

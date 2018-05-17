@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/y213"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/y26"
+        android:layout_marginBottom="@dimen/y32">
+
+        <TextView
+            android:id="@+id/water_know_tv_title"
+            android:layout_width="@dimen/x598"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="2"
+            android:text="你今天喝“好”水了吗？健康饮水用水小知识驱蚊器翁恶趣味群翁群翁群"
+            android:textSize="@dimen/x46" />
+        <TextView
+            android:id="@+id/water_know_tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y25"
+            android:text="2018年3月8日"
+            android:textSize="@dimen/x34" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/water_know_img"
+        android:layout_width="@dimen/x321"
+        android:layout_height="@dimen/y213"
+        android:layout_marginLeft="@dimen/x75"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="@dimen/y26"
+        android:layout_marginRight="@dimen/x40"
+        android:layout_marginBottom="@dimen/y32"/>
+</LinearLayout>
